@@ -1,0 +1,25 @@
+class Dog:
+    def __init__(self, name, age):
+        self.__name = name 
+        self.__age = age   
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_age(self, age):
+            self.__age = age
+    
+    def get_name(self):
+        return self.__name
+
+    def get_age(self):
+        return self.__age
+
+
+my_dog = Dog("UyKieng", 5)  
+print("Dog's Name:", my_dog.get_name()) 
+print("Dog's Age:", my_dog.get_age())   
+my_dog.set_name("Ronel")  
+my_dog.set_age(6)       
+print("Updated Dog's Name:", my_dog.get_name())  
+print("Updated Dog's Age:", my_dog.get_age())     
