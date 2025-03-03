@@ -1,14 +1,14 @@
-class Counter:
-    def __init__(self):
-        self.__count = 0
-    def increment(self):
-        self.__count += 1
+class Book:
+    def __init__(self, title, author):
+        self.__title = title  
+        self.__author = author  
 
-    def get_count(self):
-        return self.__count 
-    
+    def get_title(self):
+        return self.__title  
 
-counter = Counter()
-counter.increment()
-counter.increment()
-print("Count:", counter.get_count())
+    def get_author(self):
+        return self.__author  
+
+my_book = Book("1984", "George Orwell")
+print("Title:", my_book.get_title())   
+print("Author:", my_book.get_author())  
